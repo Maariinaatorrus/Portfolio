@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header .slider{
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  height: 950px;
+}
+
+header .slider {
+  color: #FFF;
+}
+
+header .slider h2{
+  font-size: 200px;
+  text-align:left;
+  font-family: 'Golos Text', sans-serif;
+}
+
+
+.projects{
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  margin-bottom: 7em;
+}
+
+img{
+    width: 100%;
+    filter: brightness(40%);
+
+}
+
+.card{
+  flex-basis: 23%;
+  padding: 1em;
+}
+
+.card_img{
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.card_img img{
+  object-fit: cover;
+  height: 100%;
+  transition: transform 0.2s ease-out;
+}
+
+.texto_imagen {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all 0.3s;
+
+
+}
+
+.texto_imagen h1 {
+  color: #FFF;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.card_img:hover img {
+  transform: scale(1.1);
+  filter: brightness(100%);
+}
+
+.card_img:hover .texto_imagen {
+  opacity: 0;
+}
+
+
+/*header*/
+.menu {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu a.title{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10%;
+}
+
+.menu h1{
+  text-transform: uppercase;
+}
+
+.menu nav {
+  margin-right: 10%;
+}
+
+.menu nav ul{
+  list-style: none;
+  display: flex;
+}
+  
+.menu nav ul li{
+  margin-right: 20px;
+}
+  
+.menu nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+
+.menu nav ul li a:hover{
+  color: #BD165E;
+  font-size: 150%;
+  font-weight: bolder;
+}
+
+.menu span{
+  color: #BD165E;
+}
+
+/*footer*/
+.menu_footer {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.menu_footer .privacity {
+  margin-right: 10%;
+  opacity: 0.4;
+}
+
+.menu_footer nav {
+  margin-left: 10%;
+}
+
+.menu_footer nav ul{
+  list-style: none;
+  display: flex;
+}
+
+.menu_footer nav ul li{
+  margin-right: 20px;
+}
+
+.menu_footer nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+  opacity: 0.4;
+
+
+}
